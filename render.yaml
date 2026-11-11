@@ -1,0 +1,40 @@
+services:
+  - type: web
+    name: xinqingnian-platform
+    runtime: docker
+    plan: starter
+    region: singapore
+    numInstances: 1
+    autoDeploy: true
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: HOST
+        value: 0.0.0.0
+      - key: COOKIE_SECURE
+        value: "1"
+      - key: DB_PATH
+        value: /var/data/xinqingnian.db
+      - key: UPLOAD_DIR
+        value: /var/data/uploads
+      - key: SMS_PROVIDER
+        value: aliyun
+      - key: SMS_CODE_SECRET
+        generateValue: true
+      - key: INITIAL_SETUP_TOKEN
+        generateValue: true
+      - key: INITIAL_ADMIN_PHONE
+        sync: false
+      - key: SMS_ALIYUN_ACCESS_KEY_ID
+        sync: false
+      - key: SMS_ALIYUN_ACCESS_KEY_SECRET
+        sync: false
+      - key: SMS_ALIYUN_SIGN_NAME
+        sync: false
+      - key: SMS_ALIYUN_TEMPLATE_CODE
+        sync: false
+    disk:
+      name: xinqingnian-data
+      mountPath: /var/data
+      sizeGB: 1

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="心青年知识平台标识">
+  <rect width="64" height="64" rx="14" fill="#386653"/>
+  <path d="M17 38c0-8 6-14 14-14h16v8H31c-3 0-6 2-6 6v2h18v8H25c-5 0-8-4-8-10Z" fill="#F6F1E7"/>
+  <circle cx="43" cy="19" r="6" fill="#D9845F"/>
+  <path d="M31 47c5-4 11-4 16 0" fill="none" stroke="#F6F1E7" stroke-width="4" stroke-linecap="round"/>
+</svg>

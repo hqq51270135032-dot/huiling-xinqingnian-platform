@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#386653" />
+    <meta
+      name="description"
+      content="心青年志愿服务知识管理平台：学习、实践、反馈与经验沉淀。"
+    />
+    <title>心青年志愿服务知识管理平台</title>
+    <link rel="icon" href="/assets/mark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div id="app" aria-live="polite"></div>
+    <div id="toast-region" class="toast-region" aria-live="assertive"></div>
+    <dialog id="modal" class="modal">
+      <div class="modal-shell">
+        <button class="icon-button modal-close" type="button" data-action="close-modal" aria-label="关闭">
+          <span aria-hidden="true">×</span>
+        </button>
+        <div id="modal-content"></div>
+      </div>
+    </dialog>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
